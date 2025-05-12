@@ -80,8 +80,8 @@ function cacatoo(){
     }
 
     /*
-        3. MAIN SIMULATION LOOP. Finally, we need to set the update-function, which is the mainwill be applied to the whole grid each time step. For now, all we will do is call "synchronous", which
-        applies the next-state function shown above to each grid point. All cells are updated at the same time, rather than in turn (for this, use the function "asynchonous")
+        3. MAIN SIMULATION LOOP. Finally, we need to set the update-function, which will be applied to the whole grid each time step. For now, all we will do is call "synchronous", which
+        applies the next-state function shown above to each grid point. All cells are updated at the same time, rather than in turn (for this, use the function "asynchronous")
     */
     sim.gol.update = function () {
         this.synchronous()         // Applied as many times as it can in 1/60th of a second
